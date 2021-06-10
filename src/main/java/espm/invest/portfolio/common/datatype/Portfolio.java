@@ -4,8 +4,7 @@ import java.util.List;
 
 public class Portfolio {
     private String id;
-    //TODO:
-    // private Usuario usuario;
+//    private User user;
     private Double balance; //saldo
     private List<StockTransaction> stockTransaction;
 

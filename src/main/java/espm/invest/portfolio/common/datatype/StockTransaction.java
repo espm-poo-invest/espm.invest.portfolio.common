@@ -12,6 +12,7 @@ public class StockTransaction {
     private Stock stock;
     private Date date;
     private double amount;
+    private TransactionType type;
 
 
     public String getId() {
@@ -52,5 +53,13 @@ public class StockTransaction {
 
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public TransactionType getType() {
+        return type;
+    }
+
+    public void setType(TransactionType type) {
+        this.type = type;
     }
 }
