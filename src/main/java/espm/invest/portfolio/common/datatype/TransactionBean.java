@@ -14,19 +14,19 @@ public class TransactionBean {
         this.name = name;
     }
 
-    public double getQtd() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setQtd(double amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
-    public double getLimite() {
+    public double getMax() {
         return max;
     }
 
-    public void setLimite(double max) {
+    public void setMax(double max) {
         this.max = max;
     }
 }
