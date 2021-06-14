@@ -9,13 +9,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
+
 @FeignClient("portfolio-service")
 public interface PortfolioController {
     @GetMapping("portfolio/{id}")
     Portfolio portfolio(String id);
 
     @GetMapping("portfolio")
-    Portfolio portfolio();
+    List<Portfolio> portfolio();
 
     @PostMapping("portfolio")
     Portfolio create(@RequestBody Portfolio portfolio);

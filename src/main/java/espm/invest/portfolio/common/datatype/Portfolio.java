@@ -7,6 +7,8 @@ public class Portfolio {
 //    private User user;
     private Double balance; //saldo
     private List<StockTransaction> stockTransaction;
+    private List<CurrencyTransaction> currencyTransaction;
+
 
     public String getId() {
         return id;
@@ -30,5 +32,13 @@ public class Portfolio {
 
     public void setStockTransaction(List<StockTransaction> stockTransaction) {
         this.stockTransaction = stockTransaction;
+    }
+
+    public List<CurrencyTransaction> getCurrencyTransaction() {
+        return currencyTransaction;
+    }
+
+    public void setCurrencyTransaction(List<CurrencyTransaction> currencyTransaction) {
+        this.currencyTransaction = currencyTransaction;
     }
 }
