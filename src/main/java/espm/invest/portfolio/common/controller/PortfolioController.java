@@ -14,7 +14,7 @@ import java.util.List;
 @FeignClient("portfolio-service")
 public interface PortfolioController {
     @GetMapping("portfolio/{id}")
-    Portfolio portfolio(String id);
+    Portfolio portfolio(@PathVariable String id);
 
     @GetMapping("portfolio")
     List<Portfolio> portfolio();
