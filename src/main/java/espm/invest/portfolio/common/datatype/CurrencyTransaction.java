@@ -1,6 +1,7 @@
 package espm.invest.portfolio.common.datatype;
 
-import java.util.Currency;
+import espm.invest.currency.common.datatype.Currency;
+
 import java.util.Date;
 
 public class CurrencyTransaction {
