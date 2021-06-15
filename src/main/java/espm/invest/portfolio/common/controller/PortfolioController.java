@@ -1,5 +1,6 @@
 package espm.invest.portfolio.common.controller;
 
+import espm.invest.portfolio.common.datatype.CurrencyTransaction;
 import espm.invest.portfolio.common.datatype.Portfolio;
 import espm.invest.portfolio.common.datatype.StockTransaction;
 import espm.invest.portfolio.common.datatype.TransactionBean;
@@ -30,6 +31,18 @@ public interface PortfolioController {
 
     @PostMapping("portfolio/{idPortfolio}/stock/sell")
     StockTransaction stockSell(
+            @PathVariable String idPortfolio,
+            @RequestBody TransactionBean bean
+    );
+
+    @PostMapping("portfolio/{idPortfolio}/currency/buy")
+    CurrencyTransaction currencyBuy(
+            @PathVariable String idPortfolio,
+            @RequestBody TransactionBean bean
+    );
+
+    @PostMapping("portfolio/{idPortfolio}/currency/sell")
+    CurrencyTransaction currencySell(
             @PathVariable String idPortfolio,
             @RequestBody TransactionBean bean
     );
